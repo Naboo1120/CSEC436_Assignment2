@@ -65,6 +65,8 @@ public class RSA {
             System.out.println("Signature is fake");
             System.exit(1);
         }
+        else
+            System.out.println("Good Signature");
 
         m=RecieverDecryptionBox.doFinal(c);
 
