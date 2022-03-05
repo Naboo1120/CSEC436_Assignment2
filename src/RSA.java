@@ -30,7 +30,7 @@ public class RSA {
         signature.initSign(SenderKeyPair.getPrivate(), secureRandom);
 
         //Sender
-        PublicKey ReceiverPK= SenderKeyPair.getPublic();
+        PublicKey ReceiverPK= ReceiverKeyPair.getPublic();
         PublicKey SenderPRK= SenderKeyPair.getPublic();
 
         byte[] m = "Hello world".getBytes();
